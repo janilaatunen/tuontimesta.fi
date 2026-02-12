@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Light background -->
-  <rect width="64" height="64" fill="#f8fafc" rx="8"/>
+  <!-- Background - color-border from site palette -->
+  <rect width="64" height="64" fill="#e2e8f0" rx="8"/>
 
-  <!-- Car icon (Material Design inspired) -->
-  <g transform="translate(12, 20)">
+  <!-- Car icon - taller aspect ratio -->
+  <g transform="translate(12, 18) scale(1, 1.15)">
     <path d="M 35.5 9 L 32.5 3 Q 32 2 31 2 L 9 2 Q 8 2 7.5 3 L 4.5 9 L 2 9 Q 0.5 9 0.5 10.5 L 0.5 13 L 0.5 19 Q 0.5 20 1.5 20 L 3.5 20 Q 3.5 22.5 5.5 22.5 Q 7.5 22.5 7.5 20 L 32.5 20 Q 32.5 22.5 34.5 22.5 Q 36.5 22.5 36.5 20 L 38.5 20 Q 39.5 20 39.5 19 L 39.5 13 L 39.5 10.5 Q 39.5 9 38 9 Z M 9.5 4 L 30.5 4 L 32.8 9 L 7.2 9 Z M 6.5 17 Q 5 17 5 15.5 Q 5 14 6.5 14 Q 8 14 8 15.5 Q 8 17 6.5 17 Z M 33.5 17 Q 32 17 32 15.5 Q 32 14 33.5 14 Q 35 14 35 15.5 Q 35 17 33.5 17 Z"
-          fill="#475569"/>
+          fill="#1e293b"/>
   </g>
 </svg>
