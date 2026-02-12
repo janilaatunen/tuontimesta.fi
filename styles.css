@@ -324,6 +324,35 @@ section h2 {
     grid-column: 1 / -1;
 }
 
+.services-divider {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+    position: relative;
+}
+
+.services-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--color-border);
+}
+
+.services-divider h4 {
+    display: inline-block;
+    background: var(--color-bg);
+    padding: 0 var(--spacing-md);
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 /* ===================================
    Pricing Section
    =================================== */
