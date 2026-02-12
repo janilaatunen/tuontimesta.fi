@@ -321,6 +321,56 @@ section h2 {
 }
 
 /* ===================================
+   Siirtoajot Section
+   =================================== */
+.siirtoajot {
+    background-color: var(--color-bg-alt);
+}
+
+.siirtoajot-content {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.siirtoajot h2 {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.siirtoajot-intro {
+    font-size: 1.0625rem;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-md);
+}
+
+.siirtoajot-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--spacing-md);
+    text-align: left;
+    display: inline-block;
+}
+
+.siirtoajot-list li {
+    padding: var(--spacing-xs) 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text-light);
+    font-size: 0.9375rem;
+}
+
+.siirtoajot-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+/* ===================================
    Pricing Section
    =================================== */
 .pricing {
