@@ -2,32 +2,33 @@
    CSS Variables
    =================================== */
 :root {
-    /* Colors */
-    --color-primary: #2563eb;
-    --color-primary-dark: #1e40af;
-    --color-text: #1f2937;
-    --color-text-light: #6b7280;
+    /* Colors - Modern Professional Palette */
+    --color-primary: #0f172a;
+    --color-primary-dark: #020617;
+    --color-text: #1e293b;
+    --color-text-light: #64748b;
     --color-bg: #ffffff;
-    --color-bg-alt: #f9fafb;
-    --color-border: #e5e7eb;
-    --color-accent: #0ea5e9;
+    --color-bg-alt: #f8fafc;
+    --color-border: #e2e8f0;
+    --color-accent: #d97706;
+    --color-accent-light: #fbbf24;
 
     /* Typography */
-    --font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-base: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-size-base: 16px;
     --line-height-base: 1.6;
 
-    /* Spacing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 4rem;
-    --spacing-xl: 6rem;
+    /* Spacing - Tighter */
+    --spacing-xs: 0.375rem;
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4.5rem;
 
     /* Layout */
     --container-width: 1200px;
-    --border-radius: 8px;
-    --transition: all 0.3s ease;
+    --border-radius: 6px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===================================
@@ -93,9 +94,10 @@ a {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     font-weight: 700;
     color: var(--color-primary);
+    letter-spacing: -0.01em;
 }
 
 .nav-menu {
@@ -106,6 +108,7 @@ a {
 
 .nav-menu a {
     font-weight: 500;
+    font-size: 0.9375rem;
     color: var(--color-text);
     transition: var(--transition);
     padding: var(--spacing-xs) var(--spacing-sm);
@@ -113,7 +116,7 @@ a {
 }
 
 .nav-menu a:hover {
-    color: var(--color-primary);
+    color: var(--color-accent);
     background-color: var(--color-bg-alt);
 }
 
@@ -139,11 +142,11 @@ a {
    =================================== */
 .hero {
     position: relative;
-    min-height: 600px;
+    min-height: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    background: var(--color-primary);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -156,8 +159,7 @@ a {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background:
-        linear-gradient(135deg, rgba(30, 58, 138, 0.85) 0%, rgba(37, 99, 235, 0.75) 100%);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(30, 41, 59, 0.82) 100%);
 }
 
 .hero-content {
@@ -181,44 +183,47 @@ a {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.875rem 1.75rem;
     font-weight: 600;
     border-radius: var(--border-radius);
     transition: var(--transition);
     cursor: pointer;
     border: none;
-    font-size: 1rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.01em;
 }
 
 .btn-primary {
-    background-color: white;
-    color: var(--color-primary);
+    background-color: var(--color-accent);
+    color: white;
 }
 
 .btn-primary:hover {
+    background-color: var(--color-accent-light);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(217, 119, 6, 0.3);
 }
 
 /* ===================================
    Sections
    =================================== */
 section {
-    padding: var(--spacing-xl) 0;
+    padding: var(--spacing-lg) 0;
 }
 
 section h2 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 700;
     margin-bottom: var(--spacing-md);
     text-align: center;
+    color: var(--color-primary);
 }
 
 .section-subtitle {
     text-align: center;
     color: var(--color-text-light);
-    margin-bottom: var(--spacing-lg);
-    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+    font-size: 1rem;
 }
 
 /* ===================================
@@ -230,32 +235,33 @@ section h2 {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .about-card {
     background: white;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-radius: var(--border-radius);
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
     transition: var(--transition);
 }
 
 .about-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
 
 .about-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: var(--spacing-sm);
 }
 
 .about-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: var(--spacing-sm);
     color: var(--color-primary);
@@ -263,6 +269,8 @@ section h2 {
 
 .about-card p {
     color: var(--color-text-light);
+    font-size: 0.9375rem;
+    line-height: 1.5;
 }
 
 /* ===================================
@@ -270,40 +278,46 @@ section h2 {
    =================================== */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .service-card {
-    background: var(--color-bg-alt);
-    padding: var(--spacing-lg);
+    background: white;
+    padding: var(--spacing-md);
     border-radius: var(--border-radius);
-    border-left: 4px solid var(--color-primary);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
     transition: var(--transition);
 }
 
 .service-card:hover {
-    border-left-width: 8px;
-    padding-left: calc(var(--spacing-lg) - 4px);
+    border-left-width: 4px;
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
 
 .service-number {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-primary);
-    opacity: 0.2;
+    color: var(--color-accent);
+    opacity: 0.3;
     margin-bottom: var(--spacing-sm);
+    line-height: 1;
 }
 
 .service-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
 }
 
 .service-card p {
     color: var(--color-text-light);
+    font-size: 0.9375rem;
+    line-height: 1.5;
 }
 
 /* ===================================
@@ -314,15 +328,19 @@ section h2 {
 }
 
 .pricing-category {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     font-weight: 600;
-    margin: var(--spacing-lg) 0 var(--spacing-md);
+    margin: var(--spacing-md) 0 var(--spacing-md);
     color: var(--color-primary);
+}
+
+.pricing-category:first-of-type {
+    margin-top: var(--spacing-sm);
 }
 
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-md);
 }
@@ -331,47 +349,50 @@ section h2 {
     background: white;
     padding: 0;
     border-radius: var(--border-radius);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
     transition: var(--transition);
     overflow: hidden;
 }
 
 .pricing-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
+    transform: translateY(-2px);
 }
 
 .vehicle-image {
     width: 100%;
-    height: 240px;
+    height: 220px;
     object-fit: cover;
     display: block;
 }
 
 .pricing-card h4 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
-    padding: var(--spacing-md) var(--spacing-lg) 0;
+    padding: var(--spacing-md) var(--spacing-md) 0;
+    color: var(--color-primary);
 }
 
 .vehicle-specs {
     color: var(--color-text-light);
-    font-size: 0.875rem;
+    font-size: 0.8125rem;
     margin-bottom: var(--spacing-md);
-    padding: 0 var(--spacing-lg);
+    padding: 0 var(--spacing-md);
 }
 
 .price-breakdown {
     border-top: 1px solid var(--color-border);
-    padding: var(--spacing-md) var(--spacing-lg) var(--spacing-lg);
+    padding: var(--spacing-md);
 }
 
 .price-row {
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing-xs) 0;
+    padding: 0.375rem 0;
     color: var(--color-text-light);
+    font-size: 0.875rem;
 }
 
 .price-row span:last-child {
@@ -382,11 +403,11 @@ section h2 {
 .price-total {
     display: flex;
     justify-content: space-between;
-    padding: var(--spacing-sm) 0;
-    margin-top: var(--spacing-sm);
-    border-top: 2px solid var(--color-primary);
+    padding: var(--spacing-sm) 0 0;
+    margin-top: var(--spacing-xs);
+    border-top: 2px solid var(--color-accent);
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 1.0625rem;
     color: var(--color-primary);
 }
 
@@ -395,36 +416,36 @@ section h2 {
    =================================== */
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .link-card {
-    background: var(--color-bg-alt);
-    padding: var(--spacing-lg);
+    background: white;
+    padding: var(--spacing-md);
     border-radius: var(--border-radius);
     text-align: center;
     transition: var(--transition);
-    border: 2px solid transparent;
+    border: 1px solid var(--color-border);
 }
 
 .link-card:hover {
-    border-color: var(--color-primary);
-    background: white;
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
 
 .link-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     color: var(--color-primary);
 }
 
 .link-card p {
     color: var(--color-text-light);
+    font-size: 0.9375rem;
 }
 
 /* ===================================
@@ -432,34 +453,35 @@ section h2 {
    =================================== */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: var(--spacing-md);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-md);
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
     border-radius: var(--border-radius);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
     transition: var(--transition);
 }
 
 .gallery-item:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 300px;
+    height: 280px;
     object-fit: cover;
     display: block;
     transition: var(--transition);
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 /* ===================================
@@ -471,20 +493,20 @@ section h2 {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
 
 .contact-card {
     background: white;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
     border-radius: var(--border-radius);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
 }
 
 .contact-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: var(--spacing-md);
     color: var(--color-primary);
@@ -504,34 +526,35 @@ section h2 {
 
 .contact-label {
     font-weight: 600;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     color: var(--color-text-light);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.05em;
 }
 
 .contact-item a {
-    color: var(--color-primary);
+    color: var(--color-accent);
     font-weight: 500;
     transition: var(--transition);
 }
 
 .contact-item a:hover {
-    text-decoration: underline;
+    color: var(--color-accent-light);
 }
 
 /* ===================================
    Footer
    =================================== */
 .footer {
-    background-color: var(--color-text);
+    background-color: var(--color-primary);
     color: white;
     text-align: center;
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
 }
 
 .footer p {
     opacity: 0.8;
+    font-size: 0.875rem;
 }
 
 /* ===================================
@@ -550,7 +573,7 @@ section h2 {
         right: 0;
         flex-direction: column;
         background: white;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         padding: var(--spacing-sm);
     }
 
@@ -559,30 +582,35 @@ section h2 {
     }
 
     .hero {
-        min-height: 500px;
+        min-height: 480px;
         padding: var(--spacing-lg) var(--spacing-md);
     }
 
     section {
-        padding: var(--spacing-lg) 0;
+        padding: var(--spacing-md) 0;
     }
 
     .about-grid,
     .services-grid,
     .pricing-grid,
     .links-grid,
-    .contact-grid {
+    .contact-grid,
+    .gallery-grid {
         grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
     :root {
-        --spacing-lg: 3rem;
-        --spacing-xl: 4rem;
+        --spacing-lg: 2.5rem;
+        --spacing-xl: 3.5rem;
     }
 
     .container {
         padding: 0 var(--spacing-sm);
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
     }
 }
