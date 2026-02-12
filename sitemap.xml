@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.tuontimesta.fi/</loc>
+    <loc>https://tuontimesta.fi/</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Section: Meistä -->
   <url>
-    <loc>https://www.tuontimesta.fi/#about</loc>
+    <loc>https://tuontimesta.fi/#about</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -19,7 +19,7 @@
 
   <!-- Section: Palvelumme -->
   <url>
-    <loc>https://www.tuontimesta.fi/#services</loc>
+    <loc>https://tuontimesta.fi/#services</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -27,7 +27,7 @@
 
   <!-- Section: Hinnasto -->
   <url>
-    <loc>https://www.tuontimesta.fi/#pricing</loc>
+    <loc>https://tuontimesta.fi/#pricing</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -35,7 +35,7 @@
 
   <!-- Section: Linkkejä -->
   <url>
-    <loc>https://www.tuontimesta.fi/#links</loc>
+    <loc>https://tuontimesta.fi/#links</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -43,7 +43,7 @@
 
   <!-- Section: Galleria -->
   <url>
-    <loc>https://www.tuontimesta.fi/#gallery</loc>
+    <loc>https://tuontimesta.fi/#gallery</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -51,7 +51,7 @@
 
   <!-- Section: Yhteystiedot -->
   <url>
-    <loc>https://www.tuontimesta.fi/#contact</loc>
+    <loc>https://tuontimesta.fi/#contact</loc>
     <lastmod>2026-02-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>

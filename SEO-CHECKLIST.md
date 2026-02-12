@@ -66,9 +66,9 @@ scp -r * user@server:/var/www/tuontimesta.fi/
 ### 4. Submit to Search Engines
 
 #### Google Search Console
-- [ ] Add property: https://www.tuontimesta.fi
+- [ ] Add property: https://tuontimesta.fi
 - [ ] Verify ownership (HTML file method or DNS)
-- [ ] Submit sitemap: https://www.tuontimesta.fi/sitemap.xml
+- [ ] Submit sitemap: https://tuontimesta.fi/sitemap.xml
 - [ ] Request indexing for homepage
 - [ ] Monitor for errors
 
@@ -210,8 +210,8 @@ scp -r * user@server:/var/www/tuontimesta.fi/
 ## 🆘 Troubleshooting
 
 ### Site not indexing?
-1. Check robots.txt is accessible: https://www.tuontimesta.fi/robots.txt
-2. Check sitemap is accessible: https://www.tuontimesta.fi/sitemap.xml
+1. Check robots.txt is accessible: https://tuontimesta.fi/robots.txt
+2. Check sitemap is accessible: https://tuontimesta.fi/sitemap.xml
 3. Submit URL for indexing in Google Search Console
 4. Check for manual actions in Search Console
 5. Verify canonical URLs are correct
