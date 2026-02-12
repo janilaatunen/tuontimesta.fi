@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <!-- Background - very light neutral -->
-  <circle cx="32" cy="32" r="32" fill="#f1f5f9"/>
+  <!-- Light background -->
+  <rect width="64" height="64" fill="#f8fafc" rx="8"/>
 
-  <!-- Simple car silhouette - single color -->
-  <path d="M 18 30 L 18 42 L 20 46 L 44 46 L 46 42 L 46 30 L 44 28 L 40 24 L 38 20 L 26 20 L 24 24 L 20 28 Z M 22 46 Q 22 48 20 48 Q 18 48 18 46 M 42 46 Q 42 48 44 48 Q 46 48 46 46"
-        fill="#475569"/>
+  <!-- Car icon (Material Design inspired) -->
+  <g transform="translate(12, 20)">
+    <path d="M 35.5 9 L 32.5 3 Q 32 2 31 2 L 9 2 Q 8 2 7.5 3 L 4.5 9 L 2 9 Q 0.5 9 0.5 10.5 L 0.5 13 L 0.5 19 Q 0.5 20 1.5 20 L 3.5 20 Q 3.5 22.5 5.5 22.5 Q 7.5 22.5 7.5 20 L 32.5 20 Q 32.5 22.5 34.5 22.5 Q 36.5 22.5 36.5 20 L 38.5 20 Q 39.5 20 39.5 19 L 39.5 13 L 39.5 10.5 Q 39.5 9 38 9 Z M 9.5 4 L 30.5 4 L 32.8 9 L 7.2 9 Z M 6.5 17 Q 5 17 5 15.5 Q 5 14 6.5 14 Q 8 14 8 15.5 Q 8 17 6.5 17 Z M 33.5 17 Q 32 17 32 15.5 Q 32 14 33.5 14 Q 35 14 35 15.5 Q 35 17 33.5 17 Z"
+          fill="#475569"/>
+  </g>
 </svg>
