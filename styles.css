@@ -590,6 +590,14 @@ section h2 {
     color: var(--color-primary);
 }
 
+.pricing-disclaimer {
+    margin-top: var(--spacing-md);
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-align: center;
+    font-style: italic;
+}
+
 /* ===================================
    Links Section
    =================================== */
