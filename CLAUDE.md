@@ -16,7 +16,7 @@ Business website for a Finnish car import company (personal/family). Production-
 
 ## Content Sections
 
-Hero → About (Meistä) → Services (Palvelumme) → Pricing (Hinnasto) → Links (Linkkejä) → Instagram → Contact
+Hero → About (Meistä) → Services (Palvelumme) → Pricing (Hinnasto) → Links (Linkkejä) → Galleria (Instagram) → Contact
 
 Contact info: phone, WhatsApp, email, addresses (Lahti + Berlin)
 
