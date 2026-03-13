@@ -41,10 +41,10 @@
     <priority>0.7</priority>
   </url>
 
-  <!-- Section: Galleria -->
+  <!-- Section: Instagram -->
   <url>
-    <loc>https://tuontimesta.fi/#gallery</loc>
-    <lastmod>2026-02-12</lastmod>
+    <loc>https://tuontimesta.fi/#instagram</loc>
+    <lastmod>2026-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

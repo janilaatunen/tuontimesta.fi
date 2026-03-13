@@ -119,6 +119,12 @@
       ]
     }
     </script>
+    <script>
+      (() => {
+        const d=document,s=d.createElement("script");s.type="module";
+        s.src="https://w.behold.so/widget.js";d.head.append(s);
+      })();
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -136,7 +142,7 @@
                     <li><a href="#services">Palvelumme</a></li>
                     <li><a href="#pricing">Hinnasto</a></li>
                     <li><a href="#links">Linkkejä</a></li>
-                    <li><a href="#gallery">Galleria</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
                     <li><a href="#contact">Yhteystiedot</a></li>
                 </ul>
             </div>
@@ -566,22 +572,12 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery">
+    <!-- Instagram Section -->
+    <section id="instagram" class="instagram">
         <div class="container">
             <h2>Galleria</h2>
-            <p class="section-subtitle">Esimerkkejä viimeaikaisista toimituksista</p>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/gallery-1.jpg" alt="Mercedes E 300 maahantuonti - talvitestaus Saksassa">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-2.jpg" alt="Autojen kuljetus Travemünden satamasta Suomeen">
-                </div>
-                <div class="gallery-item">
-                    <img src="images/gallery-3.jpg" alt="Sähköautojen lataus ja tarkastus ennen toimitusta">
-                </div>
-            </div>
+            <p class="section-subtitle">Viimeisimmät kuulumiset Instagramista</p>
+            <behold-widget feed-id="9faNVlUuPsKF3Q3VGDGW"></behold-widget>
         </div>
     </section>
 

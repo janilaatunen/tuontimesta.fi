@@ -23,6 +23,9 @@
 *.swo
 *~
 
+# Planning docs
+SEO-CHECKLIST.md
+
 # Logs
 *.log
 npm-debug.log*
