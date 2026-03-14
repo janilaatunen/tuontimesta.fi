@@ -250,9 +250,6 @@ section h2 {
 }
 
 .about-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--color-accent);
-    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
 
 .about-icon {
@@ -292,8 +289,6 @@ section h2 {
 }
 
 .service-card:hover {
-    transform: translateX(4px);
-    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
 
 .service-number {
@@ -402,8 +397,6 @@ section h2 {
 }
 
 .delivery-card:hover {
-    border-color: var(--color-accent);
-    transform: translateY(-2px);
 }
 
 .delivery-location {
@@ -531,9 +524,6 @@ section h2 {
 }
 
 .pricing-card:hover {
-    border-color: var(--color-accent);
-    box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
-    transform: translateY(-2px);
 }
 
 .vehicle-image {
@@ -631,7 +621,9 @@ section h2 {
 }
 
 .link-card:hover {
+    border-width: 2px;
     border-color: var(--color-accent);
+    padding: calc(var(--spacing-sm) - 1px) calc(var(--spacing-md) - 1px);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(217, 119, 6, 0.1);
 }
@@ -640,7 +632,12 @@ section h2 {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: var(--spacing-xs);
-    color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+.link-card h4::after {
+    content: " →";
+    opacity: 0.5;
 }
 
 .link-card p {
