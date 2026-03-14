@@ -406,6 +406,12 @@ section h2 {
     margin-bottom: var(--spacing-xs);
 }
 
+.delivery-detail {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-xs);
+}
+
 .delivery-price {
     font-size: 1.25rem;
     font-weight: 700;
